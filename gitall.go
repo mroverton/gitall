@@ -12,7 +12,7 @@ import (
 	"sync"
 )
 
-var MaxOutstanding = runtime.NumCPU()
+var MaxOutstanding = runtime.NumCPU() * 2
 
 type Command struct {
 	dir string
